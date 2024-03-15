@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GenreCollectionHeaderView" id="U6b-Vx-4bR" customClass="GenreCollectionHeaderView" customModule="TMDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="msu-8i-jla">
+                    <rect key="frame" x="0.0" y="10" width="63.666666666666664" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBS-4Y-gvO">
+                            <rect key="frame" x="0.0" y="13" width="63.666666666666664" height="23"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Genre">
+                                <color key="titleColor" name="TextGray4"/>
+                                <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
+                            </state>
+                            <connections>
+                                <action selector="genreButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="UgE-Nv-WFa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="msu-8i-jla" secondAttribute="bottom" id="GCn-S1-gpv"/>
+                <constraint firstItem="msu-8i-jla" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="Vg5-P1-ZKc"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="msu-8i-jla" secondAttribute="trailing" id="Wt3-ts-YdD"/>
+                <constraint firstItem="msu-8i-jla" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="kPy-eW-EyE"/>
+            </constraints>
+            <connections>
+                <outlet property="genreButton" destination="kBS-4Y-gvO" id="vmk-PA-mTA"/>
+            </connections>
+            <point key="canvasLocation" x="227.48091603053433" y="22.887323943661972"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <namedColor name="TextGray4">
+            <color red="0.81813937430000006" green="0.82034057380000003" blue="0.83905184269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

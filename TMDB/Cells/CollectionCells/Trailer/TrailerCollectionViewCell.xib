@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrailerCollectionViewCell" id="gTV-IL-0wX" customClass="TrailerCollectionViewCell" customModule="TMDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="269"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="269"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="j5s-wW-W3G">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="269"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjQ-aM-cIX" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="245.66666666666666"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aop-WV-Flg">
+                                <rect key="frame" x="0.0" y="248.66666666666666" width="376" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="j5s-wW-W3G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Hml-xR-zOE"/>
+                <constraint firstItem="j5s-wW-W3G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IEr-Yc-Vwi"/>
+                <constraint firstAttribute="trailing" secondItem="j5s-wW-W3G" secondAttribute="trailing" id="OK8-26-pgR"/>
+                <constraint firstAttribute="bottom" secondItem="j5s-wW-W3G" secondAttribute="bottom" id="YQx-sn-arl"/>
+            </constraints>
+            <size key="customSize" width="376" height="269"/>
+            <connections>
+                <outlet property="playerView" destination="rjQ-aM-cIX" id="VK5-TT-mJH"/>
+                <outlet property="trailerTitleLabel" destination="aop-WV-Flg" id="H39-jp-Jbb"/>
+            </connections>
+            <point key="canvasLocation" x="207.63358778625954" y="69.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+</document>

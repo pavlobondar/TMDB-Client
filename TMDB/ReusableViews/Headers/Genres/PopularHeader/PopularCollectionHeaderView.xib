@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopularCollectionHeaderView" customModule="TMDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ohA-yb-xN1">
+                    <rect key="frame" x="50" y="5" width="466" height="81"/>
+                    <color key="currentPageIndicatorTintColor" name="AccentColor"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ohA-yb-xN1" secondAttribute="trailing" constant="50" id="KFP-m3-DAA"/>
+                <constraint firstItem="ohA-yb-xN1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Xdc-Oj-853"/>
+                <constraint firstItem="ohA-yb-xN1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="imj-3Y-ceC"/>
+                <constraint firstItem="ohA-yb-xN1" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="5" id="oy4-gX-tjh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pageControl" destination="ohA-yb-xN1" id="Ri4-Ca-5nl"/>
+            </connections>
+            <point key="canvasLocation" x="97.70992366412213" y="-251.7605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.17599999904632568" blue="0.33299997448921204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

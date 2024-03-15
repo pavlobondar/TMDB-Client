@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AuthViewController" id="Y6W-OH-hqX" customClass="AuthViewController" customModule="TMDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AuthBacground" translatesAutoresizingMaskIntoConstraints="NO" id="DzX-vK-bfJ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bb5-GU-Ntg">
+                                <rect key="frame" x="0.0" y="427.33333333333326" width="393" height="424.66666666666674"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TgI-9M-3sd">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="425"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Rd-u6-chY">
+                                            <rect key="frame" x="20" y="20" width="353" height="364.66666666666669"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TMDB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sB-d5-k7W">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="43"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Millions of movies, TV shows and people to discover. Explore now." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgR-Rc-54R">
+                                                    <rect key="frame" x="0.0" y="58" width="353" height="45.666666666666657"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aCP-EU-0te">
+                                                    <rect key="frame" x="0.0" y="118.66666666666669" width="353" height="106"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBG-KU-u7v" customClass="RoundedTextField" customModule="TMDB" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="LMJ-6j-X6a"/>
+                                                            </constraints>
+                                                            <color key="textColor" name="AppBacgroundColor"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="name"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Y6W-OH-hqX" id="Wzq-JL-dgL"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLx-8H-zZT" customClass="RoundedTextField" customModule="TMDB" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="56" width="353" height="50"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="ghR-Qe-J62"/>
+                                                            </constraints>
+                                                            <color key="textColor" name="AppBacgroundColor"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Y6W-OH-hqX" id="1p0-cT-sWo"/>
+                                                            </connections>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSd-pY-vA6" customClass="RoundedButton" customModule="TMDB" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="239.66666666666669" width="353" height="50"/>
+                                                    <color key="backgroundColor" name="AccentColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="JU9-EH-h2X"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Login"/>
+                                                    <connections>
+                                                        <action selector="loginButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2mE-tX-vts"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWP-8E-b8u">
+                                                    <rect key="frame" x="0.0" y="304.66666666666669" width="353" height="60"/>
+                                                    <string key="text">The Movie Database (TMDB) is a community built movie and TV database. Every piece of data has been added by our amazing community dating back to 2008. TMDB's strong international focus and breadth of data is largely unmatched and something we're incredibly proud of. Put simply, we live and breathe community and that's precisely what makes us different.</string>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="7Rd-u6-chY" secondAttribute="trailing" constant="20" id="8h1-py-21y"/>
+                                        <constraint firstItem="7Rd-u6-chY" firstAttribute="leading" secondItem="TgI-9M-3sd" secondAttribute="leading" constant="20" id="T2c-PX-RU9"/>
+                                        <constraint firstAttribute="bottom" secondItem="7Rd-u6-chY" secondAttribute="bottom" constant="40" id="Tob-g0-7C2"/>
+                                        <constraint firstItem="7Rd-u6-chY" firstAttribute="top" secondItem="TgI-9M-3sd" secondAttribute="top" constant="20" id="sBA-Qa-I9b"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="AppBacgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DzX-vK-bfJ" secondAttribute="bottom" id="BSg-bc-Yl0"/>
+                            <constraint firstItem="DzX-vK-bfJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Vou-II-12k"/>
+                            <constraint firstItem="Bb5-GU-Ntg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dPZ-1c-MFd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Bb5-GU-Ntg" secondAttribute="trailing" id="hnZ-1i-9yy"/>
+                            <constraint firstAttribute="bottom" secondItem="Bb5-GU-Ntg" secondAttribute="bottom" id="mn5-Cg-QbG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DzX-vK-bfJ" secondAttribute="trailing" id="tcf-Vj-4ZI"/>
+                            <constraint firstItem="DzX-vK-bfJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yvi-xA-1Zn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="Tob-g0-7C2" id="sDp-hV-Ac0"/>
+                        <outlet property="containerView" destination="Bb5-GU-Ntg" id="j6q-oD-s69"/>
+                        <outlet property="loginButton" destination="mSd-pY-vA6" id="kZM-Jw-Xua"/>
+                        <outlet property="passwordTextField" destination="TLx-8H-zZT" id="aEm-LM-Jof"/>
+                        <outlet property="usernameTextField" destination="aBG-KU-u7v" id="qgd-n5-RWX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AuthBacground" width="2560" height="1600"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.17599999904632568" blue="0.33299997448921204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppBacgroundColor">
+            <color red="0.14900000393390656" green="0.16099999845027924" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

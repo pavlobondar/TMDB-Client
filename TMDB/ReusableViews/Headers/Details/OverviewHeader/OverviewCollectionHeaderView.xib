@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OverviewCollectionHeaderView" id="U6b-Vx-4bR" customClass="OverviewCollectionHeaderView" customModule="TMDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Sf5-YP-HZx">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="46"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jyV-fB-MQQ">
+                            <rect key="frame" x="0.0" y="7.3333333333333339" width="308" height="31.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uy-Rf-kWC" customClass="RoundedButton" customModule="TMDB" customModuleProvider="target">
+                            <rect key="frame" x="314" y="7" width="32" height="32"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="0.70452193708609268" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="090-cE-lNr"/>
+                                <constraint firstAttribute="width" constant="32" id="Hli-k1-udf"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                            <connections>
+                                <action selector="shareButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="lcC-zz-WTQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X3-xe-rqK" customClass="RoundedButton" customModule="TMDB" customModuleProvider="target">
+                            <rect key="frame" x="352" y="7" width="32" height="32"/>
+                            <color key="backgroundColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="0.69844267384105962" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="DbM-rW-bNC"/>
+                                <constraint firstAttribute="width" constant="32" id="uBI-9h-XKw"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="bookmark" catalog="system"/>
+                            <connections>
+                                <action selector="updateFavoriteStatusButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="9S5-ma-96Y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Sf5-YP-HZx" secondAttribute="bottom" constant="3" id="VZm-K5-vk8"/>
+                <constraint firstItem="Sf5-YP-HZx" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="YlD-rN-R0U"/>
+                <constraint firstAttribute="trailing" secondItem="Sf5-YP-HZx" secondAttribute="trailing" id="fWd-Kl-rAi"/>
+                <constraint firstItem="Sf5-YP-HZx" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="mfs-Ac-pGg"/>
+            </constraints>
+            <connections>
+                <outlet property="shareButton" destination="3uy-Rf-kWC" id="NDp-Si-Zwo"/>
+                <outlet property="titleLabel" destination="jyV-fB-MQQ" id="Tl4-VV-a7I"/>
+                <outlet property="updateFavoriteStatusButton" destination="2X3-xe-rqK" id="d6s-EO-fP9"/>
+            </connections>
+            <point key="canvasLocation" x="187.78625954198472" y="57.394366197183103"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
+    </resources>
+</document>

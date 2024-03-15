@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (5.8.1)
+  - KeychainSwift (20.0.0)
+  - ProgressHUD (14.1.0)
+  - Realm (10.44.0):
+    - Realm/Headers (= 10.44.0)
+  - Realm/Headers (10.44.0)
+  - RealmSwift (10.44.0):
+    - Realm (= 10.44.0)
+  - SDWebImage (5.18.5):
+    - SDWebImage/Core (= 5.18.5)
+  - SDWebImage/Core (5.18.5)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainSwift (~> 20.0)
+  - ProgressHUD
+  - RealmSwift (~> 10)
+  - SDWebImage (~> 5.0)
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainSwift
+    - ProgressHUD
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  ProgressHUD: c4a55f108815c46a6bf082407d2f806840b7a869
+  Realm: 0419a32457873acb720df25bf1d658df36967cf2
+  RealmSwift: 352f85c018b4d0efe961974bfa95bf7a30e079f6
+  SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: cc9d820c46490faf4f658e919468719cbb1d5a9c
+
+COCOAPODS: 1.14.2
