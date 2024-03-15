@@ -16,7 +16,7 @@ final class SearchCoordinator: SearchCoordinatorProtocol {
     
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    var type: CoordinatorType { .genres }
+    var type: CoordinatorType { .search }
     
     required init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController

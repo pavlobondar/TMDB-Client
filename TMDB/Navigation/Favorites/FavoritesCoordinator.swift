@@ -16,7 +16,7 @@ final class FavoritesCoordinator: FavoritesCoordinatorProtocol {
     
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    var type: CoordinatorType { .genres }
+    var type: CoordinatorType { .favorites }
     
     required init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController

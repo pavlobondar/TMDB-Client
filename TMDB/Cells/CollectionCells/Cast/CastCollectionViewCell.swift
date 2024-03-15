@@ -8,10 +8,10 @@
 import UIKit
 
 final class CastCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var castImageView: UIImageView!
+    @IBOutlet private weak var castImageView: UIImageView!
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var subtitleLabel: UILabel!
     
     var viewModel: CellViewModel? {
         didSet {
